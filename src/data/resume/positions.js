@@ -1,7 +1,7 @@
 const positions = [
   {
-    company: 'Arthena',
-    position: 'Co-founder, C.T.O.',
+    company: 'Future Way Institute Of Multimedia',
+    position: 'Software Technician',
     link: 'https://arthena.com',
     daterange: 'January 2014 - Present',
     points: [
