@@ -20,8 +20,8 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>Hi, I&apos;m Neel. I like deploying things.
-        I am a <a href="https://www.sheridancollege.ca/">Sheridan College</a> student. Before I was employee 
-        at <a href="https://www.futurewayinstitute.com/">Future Way</a> and 
+        I am a <a href="https://www.sheridancollege.ca/">Sheridan College</a> student. Before I was employee
+        at <a href="https://www.futurewayinstitute.com/">Future Way</a> and
         , <a href="https://parmarboothouse.com/">Parmar Boot House</a>.
       </p>
       <ul className="actions">
@@ -32,7 +32,7 @@ const SideBar = () => (
     </section>
 
     <section id="footer">
-      <ContactIcons   />
+      <ContactIcons />
       <p className="copyright">&copy; Neel Patel <Link to="/">neelpatelportfolio.netlify.app</Link>.</p>
     </section>
   </section>
