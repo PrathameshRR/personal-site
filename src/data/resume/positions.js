@@ -17,11 +17,11 @@ const positions = [
     link: 'https://parmarboothouse.com/',
     daterange: 'June 2022 - January 2023',
     points: [
-      'Developed strong product  knowledge to assist customers with informed purchasing decisions 
-       Managed inventory ensuring optimal stock level and record-keeping 
-       Operated the cash register, and handled transactions with 99% accuracy 
-       Handled customer inquiries and resolved complaints  
-       Delivered exceptional customer service ',
+      'Developed strong product  knowledge to assist customers with informed purchasing decisions',
+       'Managed inventory ensuring optimal stock level and record-keeping', 
+       'Operated the cash register, and handled transactions with 99% accuracy', 
+       'Handled customer inquiries and resolved complaints',  
+       'Delivered exceptional customer service',
     ],
   },
 ];
