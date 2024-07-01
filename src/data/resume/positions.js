@@ -3,7 +3,7 @@ const positions = [
     company: 'Future Way Institute Of Multimedia',
     position: 'Software Technician',
     link: 'https://www.futurewayinstitute.com/',
-    daterange: 'F E B R U A R Y 2023 - M A R C H 2024',
+    daterange: 'February 2023 - March 2024',
     points: [
       'Deployed quantitative strategies to predict the value of fine art in various pricing contexts.',
       'Built production, on-line, end-to-end optimized machine learning pipelines with Pandas, Numpy, Scikit, Tensorflow, Dagster, Postgres, etc. on GCP with Kubernetes.',
@@ -15,7 +15,7 @@ const positions = [
     company: 'Parmar Boot House',
     position: 'Sales associate',
     link: 'https://parmarboothouse.com/',
-    daterange: 'J U N E 2022 - J A N U A R Y 2023',
+    daterange: 'June 2022 - January 2023',
     points: [
       'Developed strong product  knowledge to assist customers with informed purchasing decisions 
        Managed inventory ensuring optimal stock level and record-keeping 
