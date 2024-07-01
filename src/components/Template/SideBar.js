@@ -31,8 +31,8 @@ const SideBar = () => (
       </ul>
     </section>
 
-    <section id="footer"
-      <ContactIcons />
+    <section id="footer">
+      <ContactIcons   />
       <p className="copyright">&copy; Neel Patel <Link to="/">neelpatelportfolio.netlify.app</Link>.</p>
     </section>
   </section>
