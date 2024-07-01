@@ -33,7 +33,7 @@ const SideBar = () => (
 
     <section id="footer"
       <ContactIcons />
-      <p className="copyright">&copy; Neel Patel <Link to="/">neelpatelportfolio.com</Link>.</p>
+      <p className="copyright">&copy; Neel Patel <Link to="/">neelpatelportfolio.netlify.app</Link>.</p>
     </section>
   </section>
 );
