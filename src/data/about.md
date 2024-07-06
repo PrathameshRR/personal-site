@@ -1,7 +1,7 @@
 
 # Intro
 
-With a diverse background in both sales and technology, I am currently pursuing an Advanced Diploma in Computer Engineering at [Sheridan College](https://www.sheridancollege.ca/). My professional journey began at [Parmar Boot House](https://parmarboothouse.com/), where I worked as a Sales Associate for 8 months. This role enhanced my customer interaction and sales strategies. Transitioning into the tech field, I served as a Software Technician at [Future Way-Institute of Multimedia](https://www.futurewayinstitute.com/) for a year, where I developed a strong foundation in software troubleshooting and technical support. Now, as I advance my education, my goal is to become a Cloud/DevOps Engineer within the next three years, combining my practical experience with academic knowledge to excel in the field.
+With a solid foundation in technology, I am currently pursuing an Advanced Diploma in Computer Engineering at [Sheridan College](https://www.sheridancollege.ca/). My professional journey in tech began at [Future Way-Institute of Multimedia](https://www.futurewayinstitute.com/), where I served as a Software Technician for about 2 years. This role allowed me to develop a strong background in software troubleshooting and technical support. As I advance my education, my goal is to become a Cloud/DevOps Engineer within the next three years, combining my practical experience with academic knowledge to excel in the field.
 
 # Currently
 
