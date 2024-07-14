@@ -7,7 +7,7 @@ const degrees = [
   },
   {
     school: 'S.M.K.R Vashi High School',
-    degree: 'Highe Secondary',
+    degree: 'Higher Secondary',
     link: 'https://schools.org.in/navsari/24240304503/s-m-k-r-vashi-high-school.html',
     year: 2022,
   },
