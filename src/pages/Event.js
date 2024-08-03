@@ -3,29 +3,29 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import Cell from '../components/Projects/Cell';
-import data from '../data/projects';
+import Event from '../components/Events/Event';
+import data from '../data/event';
 
-const Projects = () => (
+const Event = () => (
   <Main
-    title="Projects"
-    description="Learn about Michael D'Angelo's projects."
+    title="Event"
+    description="See events"
   >
     <article className="post" id="projects">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/projects">Projects</Link></h2>
+          <h2 data-testid="heading"><Link to="/event">Events</Link></h2>
           <p>A selection of projects that I&apos;m not too ashamed of</p>
         </div>
       </header>
-      {data.map((project) => (
+      {data.map((event) => (
         <Cell
-          data={project}
-          key={project.title}
+          data={event}
+          key={event.title}
         />
       ))}
     </article>
   </Main>
 );
 
-export default Projects;
+export default Event;
