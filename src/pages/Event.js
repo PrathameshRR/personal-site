@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import Event from '../components/Events/Event';
+import EventComponent from '../components/Events/Event'; // Rename the imported Event to EventComponent
 import data from '../data/event';
 
 const Event = () => (
@@ -19,7 +19,7 @@ const Event = () => (
         </div>
       </header>
       {data.map((event) => (
-        <Cell
+        <EventComponent // Use the renamed component here
           data={event}
           key={event.title}
         />
