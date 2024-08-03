@@ -23,3 +23,29 @@
 			text-transform: uppercase;
 		}
 	}
+	/* src/static/css/components/_section.scss */
+#events {
+	padding: 2em 0;
+	background: #f9f9f9;
+	text-align: center;
+  }
+  
+  #events h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+  }
+  
+  #events p {
+	font-size: 1.2em;
+  }
+  
+  #events a {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  #events a:hover {
+	text-decoration: underline;
+  }
+  
