@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import EventComponent from '../components/Events/Event'; // Rename the imported Event to EventComponent
+import Event from '../components/Event/Event'; // Rename the imported Event to EventComponent
 import data from '../data/event';
 
 const Event = () => (
