@@ -9,21 +9,7 @@ const validateText = (text) => {
 };
 
 const messages = [
-  'hi',
-  'hello',
-  'hola',
-  'you-can-email-me-at-literally-anything! Really',
-  'well, not anything. But most things',
-  'like-this',
-  'or-this',
-  'but not this :(  ',
-  'you.can.also.email.me.with.specific.topics.like',
-  'just-saying-hi',
-  'please-work-for-us',
-  'help',
-  'admin',
-  'or-I-really-like-your-website',
-  'thanks',
+  'neel_patel2004',
 ];
 
 const useInterval = (callback, delay) => {
@@ -76,9 +62,9 @@ const EmailLink = () => {
       onMouseEnter={() => setIsActive(false)}
       onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
     >
-      <a href={validateText(message) ? `mailto:${message}@neelpatel.com` : ''}>
+      <a href={validateText(message) ? `mailto:${message}@outlook.com` : ''}>
         <span>{message}</span>
-        <span>@neelpatel.com</span>
+        <span>@outlook.com</span>
       </a>
     </div>
   );
