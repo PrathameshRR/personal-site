@@ -3,7 +3,7 @@ const data = [
   {
     title: 'Deployment Of ReactJS',
     subtitle: 'Deployement by using Docker and EC2',
-    image: '/images/projects/nearestdollar.jpg',
+    image: '/images/projects/Deploymentofreactjsapp.png',
     link: 'https://blog.neelbuilds.com/deployment-for-react-js',
     startDate: '2024-08-19',
     endDate: '2024-08-19',
