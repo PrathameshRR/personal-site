@@ -5,7 +5,6 @@ import dayjs from 'dayjs';
 const Cell = ({ data }) => {
   const formattedStartDate = dayjs(data.startDate).format('MMMM, YYYY');
   const formattedEndDate = dayjs(data.endDate).format('MMMM, YYYY');
-  
   return (
     <div className="cell-container">
       <article className="mini-post">
