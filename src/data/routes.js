@@ -20,6 +20,10 @@ const routes = [
     label: 'Contact',
     path: '/contact',
   },
+  {
+    label: 'Projects',
+    path: '/projects',
+  },
 
 ];
 
