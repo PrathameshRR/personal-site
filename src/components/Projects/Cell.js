@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
 const Cell = ({ data }) => {
-  const formattedStartDate = dayjs(data.startDate).format('MMMM, YYYY');
-  const formattedEndDate = dayjs(data.endDate).format('MMMM, YYYY');
+  const formattedStartDate = dayjs(data.startDate).format('MMMM D, YYYY');
+  const formattedEndDate = dayjs(data.endDate).format('MMMM D, YYYY');
   return (
     <div className="cell-container">
       <article className="mini-post">
