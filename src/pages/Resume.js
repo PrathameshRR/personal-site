@@ -39,10 +39,10 @@ const Resume = () => (
 
         </div>
       </header>
+      <Certifications data={certifications} />
       <Education data={degrees} />
       <Experience data={positions} />
       <Skills skills={skills} categories={categories} />
-      <Certifications data={certifications} />
       <References />
 
     </article>
