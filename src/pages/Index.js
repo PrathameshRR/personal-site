@@ -29,13 +29,14 @@ const Index = () => (
           or <Link to="/contact">contact</Link> me.
         </p>
         <p>
-          <a href="https://www.credly.com/badges/a1a0c75d-b2bb-4f82-b97e-a67af59589b5/linked_in?t=shv1tc" 
-             target="_blank" 
-             rel="noopener noreferrer">
+          <a href="https://www.credly.com/badges/a1a0c75d-b2bb-4f82-b97e-a67af59589b5/linked_in?t=shv1tc"
+            target="_blank"
+            rel="noopener noreferrer">
             View my Cloud Practitioner Certification
           </a>
         </p>
-        <p>Source available <a href="https://github.com/Neelpatel1604/personal-site">here</a>.</p>
+        <p>Source available <a href="https://github.com/Neelpatel1604/personal-site">here</a>.
+        </p>
       </div>
     </article>
   </Main>
