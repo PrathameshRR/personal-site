@@ -27,13 +27,14 @@ const EventLayout = ({ data }) => {
         </header>
         <div className="images-container">
           {data.images.length > 0 ? (
-            data.images.slice(0, 4).map((image, index) => (
+            data.images.slice(0, 4).map((image) => (
               <button
-                key={`${data.title}-image-${index}`}
+                key={image}
+                type="button"
                 onClick={() => handleImageClick(image)}
                 className="image-button"
               >
-                <img src={image} alt={`Event ${index + 1}`} />
+                <img src={image} alt={`Event ${data.title}`} />
               </button>
             ))
           ) : (
@@ -47,7 +48,9 @@ const EventLayout = ({ data }) => {
 
       {isModalOpen && (
         <div className="modal" onClick={closeModal}>
-          <button className="close" onClick={closeModal}>X</button>
+          <button type="button" className="close" onClick={closeModal}>
+            X
+          </button>
           <img src={selectedImage} alt="Selected" />
         </div>
       )}
