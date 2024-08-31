@@ -16,8 +16,9 @@ const sections = [
   'Education',
   'Experience',
   'Skills',
-  'References',
   'Certifications',
+  'References',
+  
 ];
 
 const Resume = () => (

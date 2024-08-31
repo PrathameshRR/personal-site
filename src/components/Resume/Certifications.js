@@ -9,14 +9,14 @@ const getRows = (certifications) => certifications
     if (a.title < b.title) return -1;
     return 0;
   })
-  .map((certification) => (
-    <li key={certification.title}>
+  .map((certifications) => (
+    <li key={certifications.title}>
       <h4>
-        <a href={certification.link} target="_blank" rel="noopener noreferrer">
-          {certification.title}
+        <a href={certifications.link} target="_blank" rel="noopener noreferrer">
+          {certifications.title}
         </a>
       </h4>
-      <p>{certification.organization} - {certification.year}</p>
+      <p>{certifications.organization} - {certifications.year}</p>
     </li>
   ));
 
