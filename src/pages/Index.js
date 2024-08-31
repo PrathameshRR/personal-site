@@ -29,12 +29,14 @@ const Index = () => (
           or <Link to="/contact">contact</Link> me.
         </p>
         <div className="logo-container" style={{ textAlign: 'left', marginBottom: '20px' }}>
+          <Link>
           <img
             href="https://www.credly.com/badges/a1a0c75d-b2bb-4f82-b97e-a67af59589b5/linked_in?t=shv1tc"
             src="/images/cloudpractitionerlogo.png"
             alt="Cloud Practitioner Certification"
             style={{ width: '200px', height: 'auto' }}
           />
+          </Link>
         </div>
         <p>
           <a
