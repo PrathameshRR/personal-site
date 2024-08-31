@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
-const eventlayout = ({ data }) => {
+const EventLayout = ({ data }) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
 
@@ -16,7 +16,6 @@ const eventlayout = ({ data }) => {
     setSelectedImage('');
   };
 
-  // Format the single event date
   const formattedDate = dayjs(data.date).format('MMMM D, YYYY');
 
   return (
@@ -29,17 +28,13 @@ const eventlayout = ({ data }) => {
         <div className="images-container">
           {data.images.length > 0 ? (
             data.images.slice(0, 4).map((image, index) => (
-              <a
-                key={index}
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleImageClick(image);
-                }}
-                className="image"
+              <button
+                key={`${data.title}-image-${index}`}
+                onClick={() => handleImageClick(image)}
+                className="image-button"
               >
                 <img src={image} alt={`Event ${index + 1}`} />
-              </a>
+              </button>
             ))
           ) : (
             <p>No images available</p>
@@ -52,7 +47,7 @@ const eventlayout = ({ data }) => {
 
       {isModalOpen && (
         <div className="modal" onClick={closeModal}>
-          <span className="close" onClick={closeModal}>X</span>
+          <button className="close" onClick={closeModal}>X</button>
           <img src={selectedImage} alt="Selected" />
         </div>
       )}
@@ -60,7 +55,7 @@ const eventlayout = ({ data }) => {
   );
 };
 
-eventlayout.propTypes = {
+EventLayout.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -69,4 +64,4 @@ eventlayout.propTypes = {
   }).isRequired,
 };
 
-export default eventlayout;
+export default EventLayout;

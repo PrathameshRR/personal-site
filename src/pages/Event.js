@@ -1,19 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import EventLayout from '../components/Event/eventlayout';
+import events from '../data/event';
 
-import Main from '../layouts/Main';
-
-import eventlayout from '../components/Event/eventlayout'; // Import the EventLayout component
-import data from '../data/event'; // Import the data file
-
-const Event = () => {
-  return (
-    <div className="event-page">
-      {data.map((event, index) => (
-        <eventlayout key={index} data={event} />
-      ))}
-    </div>
-  );
-};
+const Event = () => (
+  <div className="event-page">
+    {events.map((event) => (
+      <EventLayout key={event.title} data={event} />
+    ))}
+  </div>
+);
 
 export default Event;
