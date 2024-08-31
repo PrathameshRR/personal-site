@@ -1,23 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const getRows = (certifications) => certifications.sort((a, b) => {
-  let ret = 0;
-  if (a.organization > b.organization) ret = -1;
-  else if (a.organization < b.organization) ret = 1;
-  else if (a.title > b.title) ret = 1;
-  else if (a.title < b.title) ret = -1;
-  return ret;
-}).map((certification, idx) => (
-  <li key={certification.title}>
-    <h4>
-      <a href={certification.link} target="_blank" rel="noopener noreferrer">
-        {certification.title}
-      </a>
-    </h4>
-    <p>{certification.organization} - {certification.year}</p>
-  </li>
-));
+const getRows = (certifications) => certifications
+  .sort((a, b) => {
+    if (a.organization > b.organization) return -1;
+    if (a.organization < b.organization) return 1;
+    if (a.title > b.title) return 1;
+    if (a.title < b.title) return -1;
+    return 0;
+  })
+  .map((certification) => (
+    <li key={certification.title}>
+      <h4>
+        <a href={certification.link} target="_blank" rel="noopener noreferrer">
+          {certification.title}
+        </a>
+      </h4>
+      <p>{certification.organization} - {certification.year}</p>
+    </li>
+  ));
 
 const Certifications = ({ data }) => (
   <div className="certifications">
@@ -33,15 +34,11 @@ const Certifications = ({ data }) => (
 
 Certifications.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    organization: PropTypes.string,
-    year: PropTypes.string,
-    link: PropTypes.string,
-  })),
-};
-
-Certifications.defaultProps = {
-  data: [],
+    title: PropTypes.string.isRequired,
+    organization: PropTypes.string.isRequired,
+    year: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 export default Certifications;
