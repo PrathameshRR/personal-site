@@ -25,6 +25,16 @@ const Index = () => (
         or <Link to="/contact">contact</Link> me.
       </p>
       <p> Source available <a href="https://github.com/Neelpatel1604/personal-site">here</a>.</p>
+      <p>
+        {/* Add the image with a link */}
+        <a href="https://www.credly.com/badges/a1a0c75d-b2bb-4f82-b97e-a67af59589b5/linked_in?t=shv1tc" target="_blank" rel="noopener noreferrer">
+          <img
+            src="public/images/cloudpractitionerlogo.png" // Replace with the URL of the uploaded image
+            alt="Certification"
+            style={{ width: '150px', height: 'auto', marginTop: '20px' }} // Adjust styles as needed
+          />
+        </a>
+      </p>
     </article>
   </Main>
 );
