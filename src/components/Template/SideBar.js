@@ -32,7 +32,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Neel Patel <Link to="/">neelpatelportfolio.netlify.app</Link>.</p>
+      <p className="copyright">&copy; Neel Patel <Link to="/">neelbuilds.com</Link>.</p>
     </section>
   </section>
 );
