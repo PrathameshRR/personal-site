@@ -14,7 +14,7 @@ const Index = () => (
         <div className="title">
           <h2 data-testid="heading"><Link to="/">ABOUT THIS SITE</Link></h2>
           <p>
-            A beautiful, responsive, statically-generated, 
+            A beautiful, responsive, statically-generated,
             react application written with modern Javascript
           </p>
         </div>
