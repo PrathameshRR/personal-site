@@ -14,10 +14,10 @@ import certifications from '../data/resume/certifications';
 import { skills, categories } from '../data/resume/skills';
 
 const sections = [
+  'Certifications',
   'Education',
   'Experience',
   'Skills',
-  'Certifications',
   'References',
 ];
 
