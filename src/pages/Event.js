@@ -3,29 +3,17 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import Cell from '../components/Event/eventlayout';
-import data from '../data/event';
+import eventlayout from '../components/Event/eventlayout'; // Import the EventLayout component
+import data from '../data/event'; // Import the data file
 
-const Event = () => (
-  <Main
-    title="Events"
-    description="Learn about Neel's Events."
-  >
-    <article className="post" id="events">
-      <header>
-        <div className="title">
-          <h2 data-testid="heading"><Link to="/event">event</Link></h2>
-          <p>A selection of event that I&apos;m not too ashamed of</p>
-        </div>
-      </header>
-      {data.map((event) => (
-        <Cell
-          data={event}
-          key={event.title}
-        />
+const Event = () => {
+  return (
+    <div className="event-page">
+      {data.map((event, index) => (
+        <eventlayout key={index} data={event} />
       ))}
-    </article>
-  </Main>
-);
+    </div>
+  );
+};
 
 export default Event;
