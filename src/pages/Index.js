@@ -12,7 +12,9 @@ const Index = () => (
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/">Welcome to My Site</Link></h2>
+          <h2 data-testid="heading"><Link to="/">ABOUT THIS SITE</Link></h2>
+          <p>A beautiful, responsive, statically-generated, react application written with modern Javascript
+          </p>
         </div>
       </header>
       <div className="content">
