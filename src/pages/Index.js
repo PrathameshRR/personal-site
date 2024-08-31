@@ -16,6 +16,14 @@ const Index = () => (
         </div>
       </header>
       <div className="content">
+        <p>
+          Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
+          or you can check out my {' '}
+          <Link to="/resume">resume</Link>, {' '}
+          <Link to="/projects">projects</Link>, {' '}
+          view <Link to="/stats">site statistics</Link>, {' '}
+          or <Link to="/contact">contact</Link> me.
+        </p>
         <div className="logo-container" style={{ textAlign: 'center', marginBottom: '20px' }}>
           <img
             src="/images/cloudpractitionerlogo.png"
@@ -23,13 +31,6 @@ const Index = () => (
             style={{ width: '200px', height: 'auto' }}
           />
         </div>
-        <p>
-          Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
-          or you can check out my {' '}
-          <Link to="/resume">resume</Link>, {' '}
-          view <Link to="/stats">site statistics</Link>, {' '}
-          or <Link to="/contact">contact</Link> me.
-        </p>
         <p>
           <a
             href="https://www.credly.com/badges/a1a0c75d-b2bb-4f82-b97e-a67af59589b5/linked_in?t=shv1tc"
