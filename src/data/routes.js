@@ -21,6 +21,10 @@ const routes = [
     path: '/stats',
   },
   {
+    label: 'Event',
+    path: '/Event',
+  },
+  {
     label: 'Contact',
     path: '/contact',
   },
