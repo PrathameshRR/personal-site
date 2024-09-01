@@ -31,6 +31,7 @@ const routes = [
   {
     label: 'Blog',
     path: 'https://blog.neelbuilds.com',
+    external: true,
   },
 ];
 
