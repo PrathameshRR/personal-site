@@ -8,7 +8,6 @@ const data = [
       'https://photosevent.s3.amazonaws.com/k1-3.jpeg',
     ],
     date: '2024-06-30',
-    
   },
   {
     title: 'GDEX-Global DevOps Experience Toronto',
