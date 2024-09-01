@@ -17,6 +17,10 @@ const routes = [
     path: '/projects',
   },
   {
+    label: 'Hacker',
+    path: '/hacker',
+  },
+  {
     label: 'Stats',
     path: '/stats',
   },
@@ -28,7 +32,6 @@ const routes = [
     label: 'Contact',
     path: '/contact',
   },
-
 ];
 
 export default routes;
