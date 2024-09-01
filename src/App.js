@@ -16,6 +16,7 @@ const Projects = lazy(() => import('./pages/Projects'));
 const Event = lazy(() => import('./pages/Event'));
 const Resume = lazy(() => import('./pages/Resume'));
 const Stats = lazy(() => import('./pages/Stats'));
+const Hacker = lazy(() => import('./pages/Hacker'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -28,6 +29,7 @@ const App = () => (
         <Route path="/contact" component={Contact} />
         <Route path="/event" component={Event} />
         <Route path="/resume" component={Resume} />
+        <Route path="/hacker" component={Hacker} />
         <Route component={NotFound} status={404} />
       </Switch>
     </Suspense>
