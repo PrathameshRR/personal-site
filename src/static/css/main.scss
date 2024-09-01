@@ -68,24 +68,3 @@
 	@import 'pages/stats';
 
 @import 'pages/hacker';
-
-// Add this to the end of your existing CSS file
-
-.event-page-layout {
-  display: flex;
-  gap: 2rem;
-}
-
-.sidebar {
-  flex: 0 0 300px; /* Adjust width as needed */
-}
-
-.main-content {
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  .event-page-layout {
-    flex-direction: column;
-  }
-}
