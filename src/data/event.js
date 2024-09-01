@@ -10,6 +10,12 @@ const data = [
     date: '2024-06-30',
   },
   {
+    title: 'ADPlist Meetup',
+    desc: 'We explored integrating design with technology and learned about new tools and methodologies. The event highlighted the importance of continuous learning and staying updated with industry advancements.',
+    images: ['https://photosevent.s3.amazonaws.com/2+june+adp.jpeg'],
+    date: '2024-07-13',
+  },
+  {
     title: 'GDEX-Global DevOps Experience Toronto',
     desc: 'The Global DevOps Experience event at Microsoft HQ in Toronto provided valuable insights into GitHub and Azure, with impactful hands-on experiences and a strong focus on team collaboration.',
     images: [
