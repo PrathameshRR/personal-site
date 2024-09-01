@@ -34,7 +34,7 @@ const EventLayout = ({ data }) => {
                 onClick={() => handleImageClick(image)}
                 className="image-button"
               >
-                <img src={image} alt={`Event ${data.title}`} />
+                <img src={image} alt={`Event ${data.title}`} style={{ width: '200px', height: '150px' }} />
               </button>
             ))
           ) : (
