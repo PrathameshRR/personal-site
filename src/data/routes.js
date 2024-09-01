@@ -28,6 +28,10 @@ const routes = [
     label: 'Contact',
     path: '/contact',
   },
+  {
+    label: 'Blog',
+    path: 'https://blog.neelbuilds.com',
+  },
 ];
 
 export default routes;
