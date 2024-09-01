@@ -16,10 +16,10 @@ const routes = [
     label: 'Projects',
     path: '/projects',
   },
-  {
-    label: 'Hacker',
-    path: '/hacker',
-  },
+  // {
+  //   label: 'Hacker',
+  //   path: '/hacker',
+  //},
   {
     label: 'Stats',
     path: '/stats',
