@@ -51,7 +51,9 @@ const EventLayout = ({ data }) => {
           <button type="button" className="close" onClick={closeModal}>
             X
           </button>
-          <img src={selectedImage} alt="Selected" />
+          <div className="modal-content">
+            <img src={selectedImage} alt="Selected" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          </div>
         </div>
       )}
     </div>
