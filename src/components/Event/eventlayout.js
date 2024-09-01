@@ -61,9 +61,9 @@ const EventLayout = ({ data }) => {
 EventLayout.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     date: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
   }).isRequired,
 };
 
