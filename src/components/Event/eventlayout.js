@@ -41,9 +41,6 @@ const EventLayout = ({ data }) => {
             <p>No images available</p>
           )}
         </div>
-        <div className="description">
-          <p>{data.desc}</p>
-        </div>
       </article>
 
       {isModalOpen && (
@@ -63,7 +60,6 @@ const EventLayout = ({ data }) => {
 EventLayout.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     date: PropTypes.string.isRequired,
   }).isRequired,
