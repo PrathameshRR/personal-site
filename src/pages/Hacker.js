@@ -14,7 +14,9 @@ const Hacker = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="/hacker">Hacker</Link></h2>
-          <p>Technologies I plan to learn in the next three years to become a senior DevOps engineer</p>
+          <p>
+            Technologies I plan to learn in the next three years to become a senior DevOps engineer
+          </p>
         </div>
       </header>
       <TechTable data={techData} />
