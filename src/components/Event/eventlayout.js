@@ -28,14 +28,21 @@ const EventLayout = ({ data }) => {
         <div className="images-container">
           {data.images.length > 0 ? (
             data.images.slice(0, 4).map((image) => (
-              <button
+              <a
                 key={image}
-                type="button"
-                onClick={() => handleImageClick(image)}
-                className="image-button"
+                href={image.link || image}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  if (!image.link) {
+                    e.preventDefault();
+                    handleImageClick(image);
+                  }
+                }}
+                className="image-link"
               >
-                <img src={image} alt={`Event ${data.title}`} style={{ width: '200px', height: '150px' }} />
-              </button>
+                <img src={image.url || image} alt={`Event ${data.title}`} style={{ width: '200px', height: '150px' }} />
+              </a>
             ))
           ) : (
             <p>No images available</p>
@@ -60,7 +67,15 @@ const EventLayout = ({ data }) => {
 EventLayout.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    images: PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          url: PropTypes.string.isRequired,
+          link: PropTypes.string,
+        }),
+      ])
+    ).isRequired,
     date: PropTypes.string.isRequired,
   }).isRequired,
 };
