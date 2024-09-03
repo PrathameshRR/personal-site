@@ -12,14 +12,11 @@ const EventLayout = ({ data }) => {
     setModalOpen(true);
   };
 
-  const closeModal = (e) => {
-    if (e.target.classList.contains('modal-overlay')) {
-      setModalOpen(false);
-    }
+  const closeModal = () => {
+    setModalOpen(false);
   };
 
-  const navigateImage = (direction, e) => {
-    e.stopPropagation();
+  const navigateImage = (direction) => {
     let newIndex = selectedImageIndex + direction;
     if (newIndex < 0) newIndex = data.images.length - 1;
     if (newIndex >= data.images.length) newIndex = 0;
@@ -46,9 +43,7 @@ const EventLayout = ({ data }) => {
                 onClick={(e) => handleImageClick(index, e)}
                 className="image-link"
               >
-                <div className="image-wrapper">
-                  <img src={image.url || image} alt={`Event ${data.title}`} />
-                </div>
+                <img src={image.url || image} alt={`Event ${data.title}`} className="event-image" />
               </a>
             ))
           ) : (
@@ -58,26 +53,23 @@ const EventLayout = ({ data }) => {
       </article>
 
       {isModalOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content">
-            <button type="button" className="close" onClick={() => setModalOpen(false)}>
-              X
-            </button>
-            <div className="image-navigation">
-              <button type="button" className="nav-button prev" onClick={(e) => navigateImage(-1, e)}>
-                &#10094;
-              </button>
-              <div className="modal-image-wrapper">
-                <img
-                  src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]}
-                  alt={`Selected ${selectedImageIndex + 1}`}
-                />
-              </div>
-              <button type="button" className="nav-button next" onClick={(e) => navigateImage(1, e)}>
-                &#10095;
-              </button>
-            </div>
+        <div className="modal" onClick={closeModal}>
+          <button type="button" className="close" onClick={closeModal}>
+            X
+          </button>
+          <button type="button" className="nav-button prev" onClick={() => navigateImage(-1)}>
+            &#10094;
+          </button>
+          <div className="modal-image-wrapper">
+            <img
+              src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]}
+              alt={`Selected ${selectedImageIndex + 1}`}
+              className="modal-image"
+            />
           </div>
+          <button type="button" className="nav-button next" onClick={() => navigateImage(1)}>
+            &#10095;
+          </button>
         </div>
       )}
     </div>
