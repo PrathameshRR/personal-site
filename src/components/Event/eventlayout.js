@@ -6,8 +6,9 @@ const EventLayout = ({ data }) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
 
-  const handleImageClick = (image) => {
-    setSelectedImage(image);
+  const handleImageClick = (image, e) => {
+    e.preventDefault();
+    setSelectedImage(image.url || image);
     setModalOpen(true);
   };
 
@@ -27,18 +28,13 @@ const EventLayout = ({ data }) => {
         </header>
         <div className="images-container">
           {data.images.length > 0 ? (
-            data.images.slice(0, 4).map((image) => (
+            data.images.slice(0, 4).map((image, index) => (
               <a
-                key={image}
-                href={image.link || image}
-                target="_blank"
+                key={index}
+                href={image.link || '#'}
+                target={image.link ? "_blank" : "_self"}
                 rel="noopener noreferrer"
-                onClick={(e) => {
-                  if (!image.link) {
-                    e.preventDefault();
-                    handleImageClick(image);
-                  }
-                }}
+                onClick={(e) => handleImageClick(image, e)}
                 className="image-link"
               >
                 <img src={image.url || image} alt={`Event ${data.title}`} style={{ width: '200px', height: '150px' }} />
@@ -74,7 +70,7 @@ EventLayout.propTypes = {
           url: PropTypes.string.isRequired,
           link: PropTypes.string,
         }),
-      ]),
+      ])
     ).isRequired,
     date: PropTypes.string.isRequired,
   }).isRequired,
