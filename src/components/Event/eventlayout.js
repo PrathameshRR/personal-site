@@ -65,10 +65,10 @@ const EventLayout = ({ data }) => {
               <button type="button" className="nav-button prev" onClick={(e) => navigateImage(-1, e)}>
                 &#10094;
               </button>
-              <img 
-                src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]} 
-                alt={`Selected ${selectedImageIndex + 1}`} 
-                style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+              <img
+                src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]}
+                alt={`Selected ${selectedImageIndex + 1}`}
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
               />
               <button type="button" className="nav-button next" onClick={(e) => navigateImage(1, e)}>
                 &#10095;
