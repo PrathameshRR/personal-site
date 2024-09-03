@@ -61,10 +61,10 @@ const EventLayout = ({ data }) => {
             &#10094;
           </button>
           <div className="modal-content">
-            <img 
-              src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]} 
-              alt={`Selected ${selectedImageIndex + 1}`} 
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+            <img
+              src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]}
+              alt={`Selected ${selectedImageIndex + 1}`}
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
             />
           </div>
           <button type="button" className="nav-button next" onClick={() => navigateImage(1)}>
