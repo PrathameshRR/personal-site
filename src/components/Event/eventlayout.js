@@ -12,11 +12,14 @@ const EventLayout = ({ data }) => {
     setModalOpen(true);
   };
 
-  const closeModal = () => {
-    setModalOpen(false);
+  const closeModal = (e) => {
+    if (e.target.classList.contains('modal-overlay')) {
+      setModalOpen(false);
+    }
   };
 
-  const navigateImage = (direction) => {
+  const navigateImage = (direction, e) => {
+    e.stopPropagation();
     let newIndex = selectedImageIndex + direction;
     if (newIndex < 0) newIndex = data.images.length - 1;
     if (newIndex >= data.images.length) newIndex = 0;
@@ -53,23 +56,25 @@ const EventLayout = ({ data }) => {
       </article>
 
       {isModalOpen && (
-        <div className="modal" onClick={closeModal}>
-          <button type="button" className="close" onClick={closeModal}>
-            X
-          </button>
-          <button type="button" className="nav-button prev" onClick={() => navigateImage(-1)}>
-            &#10094;
-          </button>
+        <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content">
-            <img
-              src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]}
-              alt={`Selected ${selectedImageIndex + 1}`}
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-            />
+            <button type="button" className="close" onClick={() => setModalOpen(false)}>
+              X
+            </button>
+            <div className="image-navigation">
+              <button type="button" className="nav-button prev" onClick={(e) => navigateImage(-1, e)}>
+                &#10094;
+              </button>
+              <img 
+                src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]} 
+                alt={`Selected ${selectedImageIndex + 1}`} 
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+              />
+              <button type="button" className="nav-button next" onClick={(e) => navigateImage(1, e)}>
+                &#10095;
+              </button>
+            </div>
           </div>
-          <button type="button" className="nav-button next" onClick={() => navigateImage(1)}>
-            &#10095;
-          </button>
         </div>
       )}
     </div>
