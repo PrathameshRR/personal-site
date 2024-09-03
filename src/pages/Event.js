@@ -13,7 +13,7 @@ const Event = () => (
       <header>
         <div className="title">
           <h2><Link to="/event">Events</Link></h2>
-          <p>A collection of events I've participated in or organized</p>
+          <p>A collection of events I&apos;ve participated in or organized</p>
         </div>
       </header>
       <div className="event-container">

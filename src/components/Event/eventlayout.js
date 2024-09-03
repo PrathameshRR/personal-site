@@ -70,7 +70,7 @@ EventLayout.propTypes = {
           url: PropTypes.string.isRequired,
           link: PropTypes.string,
         }),
-      ])
+      ]),
     ).isRequired,
     date: PropTypes.string.isRequired,
   }).isRequired,
