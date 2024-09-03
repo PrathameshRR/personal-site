@@ -4,17 +4,23 @@ import dayjs from 'dayjs';
 
 const EventLayout = ({ data }) => {
   const [isModalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState('');
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
-  const handleImageClick = (image, e) => {
+  const handleImageClick = (index, e) => {
     e.preventDefault();
-    setSelectedImage(image.url || image);
+    setSelectedImageIndex(index);
     setModalOpen(true);
   };
 
   const closeModal = () => {
     setModalOpen(false);
-    setSelectedImage('');
+  };
+
+  const navigateImage = (direction) => {
+    let newIndex = selectedImageIndex + direction;
+    if (newIndex < 0) newIndex = data.images.length - 1;
+    if (newIndex >= data.images.length) newIndex = 0;
+    setSelectedImageIndex(newIndex);
   };
 
   const formattedDate = dayjs(data.date).format('MMMM D, YYYY');
@@ -28,13 +34,13 @@ const EventLayout = ({ data }) => {
         </header>
         <div className="images-container">
           {data.images.length > 0 ? (
-            data.images.slice(0, 4).map((image) => (
+            data.images.slice(0, 4).map((image, index) => (
               <a
                 key={image.url || image}
                 href={image.link || '#'}
                 target={image.link ? '_blank' : '_self'}
                 rel="noopener noreferrer"
-                onClick={(e) => handleImageClick(image, e)}
+                onClick={(e) => handleImageClick(index, e)}
                 className="image-link"
               >
                 <img src={image.url || image} alt={`Event ${data.title}`} style={{ width: '200px', height: '150px' }} />
@@ -51,9 +57,19 @@ const EventLayout = ({ data }) => {
           <button type="button" className="close" onClick={closeModal}>
             X
           </button>
+          <button type="button" className="nav-button prev" onClick={() => navigateImage(-1)}>
+            &#10094;
+          </button>
           <div className="modal-content">
-            <img src={selectedImage} alt="Selected" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            <img 
+              src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]} 
+              alt={`Selected ${selectedImageIndex + 1}`} 
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+            />
           </div>
+          <button type="button" className="nav-button next" onClick={() => navigateImage(1)}>
+            &#10095;
+          </button>
         </div>
       )}
     </div>
