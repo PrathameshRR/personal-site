@@ -28,11 +28,11 @@ const EventLayout = ({ data }) => {
         </header>
         <div className="images-container">
           {data.images.length > 0 ? (
-            data.images.slice(0, 4).map((image, index) => (
+            data.images.slice(0, 4).map((image) => (
               <a
-                key={index}
+                key={image.url || image}
                 href={image.link || '#'}
-                target={image.link ? "_blank" : "_self"}
+                target={image.link ? '_blank' : '_self'}
                 rel="noopener noreferrer"
                 onClick={(e) => handleImageClick(image, e)}
                 className="image-link"
