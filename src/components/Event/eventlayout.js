@@ -12,11 +12,14 @@ const EventLayout = ({ data }) => {
     setModalOpen(true);
   };
 
-  const closeModal = () => {
-    setModalOpen(false);
+  const closeModal = (e) => {
+    if (e.target.classList.contains('modal')) {
+      setModalOpen(false);
+    }
   };
 
-  const navigateImage = (direction) => {
+  const navigateImage = (direction, e) => {
+    e.stopPropagation(); // Prevent the modal from closing
     let newIndex = selectedImageIndex + direction;
     if (newIndex < 0) newIndex = data.images.length - 1;
     if (newIndex >= data.images.length) newIndex = 0;
@@ -54,20 +57,20 @@ const EventLayout = ({ data }) => {
 
       {isModalOpen && (
         <div className="modal" onClick={closeModal}>
-          <button type="button" className="close" onClick={closeModal}>
+          <button type="button" className="close" onClick={() => setModalOpen(false)}>
             X
           </button>
-          <button type="button" className="nav-button prev" onClick={() => navigateImage(-1)}>
+          <button type="button" className="nav-button prev" onClick={(e) => navigateImage(-1, e)}>
             &#10094;
           </button>
-          <div className="modal-image-wrapper">
+          <div className="modal-image-wrapper" onClick={(e) => e.stopPropagation()}>
             <img
               src={data.images[selectedImageIndex].url || data.images[selectedImageIndex]}
               alt={`Selected ${selectedImageIndex + 1}`}
               className="modal-image"
             />
           </div>
-          <button type="button" className="nav-button next" onClick={() => navigateImage(1)}>
+          <button type="button" className="nav-button next" onClick={(e) => navigateImage(1, e)}>
             &#10095;
           </button>
         </div>
@@ -86,7 +89,7 @@ EventLayout.propTypes = {
           url: PropTypes.string.isRequired,
           link: PropTypes.string,
         }),
-      ]),
+      ])
     ).isRequired,
     date: PropTypes.string.isRequired,
   }).isRequired,
