@@ -6,12 +6,12 @@ const data = [
       'https://photosevent.s3.amazonaws.com/k1-2.jpeg',
       'https://photosevent.s3.amazonaws.com/k1-3.jpeg',
     ],
-    date: '2024-06-30',
+    date: '2024-05-30',
   },
   {
     title: 'ADPlist Meetup',
     images: ['https://photosevent.s3.amazonaws.com/2+june+adp.jpeg'],
-    date: '2024-07-13',
+    date: '2024-06-02',
   },
   {
     title: 'GDEX-Global DevOps Experience Toronto',
