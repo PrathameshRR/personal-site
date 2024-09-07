@@ -16,7 +16,7 @@ const data = [
   {
     title: 'AWS Cloud Paractitioner Series',
     subtitle: 'AWS Cloud Practitioner Series with Neel Patel',
-    image: '\images\projects\AWSseries.png',
+    image: '/images/projects/AWSseries.png',
     link: 'https://blog.neelbuilds.com/series/awscloudpractitioner',
     startDate: '2024-05-18',
     endDate: '2024-06-11',
