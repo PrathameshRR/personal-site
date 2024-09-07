@@ -16,14 +16,14 @@ const data = [
   {
     title: 'AWS Cloud Paractitioner Series',
     subtitle: 'AWS Cloud Practitioner Series with Neel Patel',
-    image: '/images/projects/Deploymentofreactjsapp.png',
+    image: '\images\projects\AWSseries.png',
     link: 'https://blog.neelbuilds.com/series/awscloudpractitioner',
     startDate: '2024-05-18',
     endDate: '2024-06-11',
     desc:
       'This blog series covers essential topics for the'
       + 'AWS Cloud Practitioner certification,'
-      +' including AWS services, cloud basics,'
+      + ' including AWS services, cloud basics,'
       + 'security, and pricing. It is ideal for beginners aiming'
       + 'to understand AWS and pass the certification exam.',
   },
