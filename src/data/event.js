@@ -47,6 +47,15 @@ const data = [
     images: ['https://photosevent.s3.amazonaws.com/13+july+adp.jpeg'],
     date: '2024-07-13',
   },
+  {
+    title: 'Brampton Venture Expo',
+    images: [
+      'https://photosevent.s3.amazonaws.com/bramptonventureexpo-1.png',
+      'https://photosevent.s3.amazonaws.com/bramptonventureexpo-2.png',
+      'https://photosevent.s3.amazonaws.com/bramptonventureexpo-3.jpeg',
+    ],
+    date: '2024-07-25',
+  },
 ];
 
 export default data;
