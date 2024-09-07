@@ -14,18 +14,17 @@ const data = [
       + 'ensure a seamless deployment process.',
   },
   {
-    title: 'AWS Cloud Paractitioner Series',
-    subtitle: 'AWS Cloud Practitioner Series with Neel Patel',
-    image: '/images/projects/AWSseries.png',
-    link: 'https://blog.neelbuilds.com/series/awscloudpractitioner',
-    startDate: '2024-05-18',
-    endDate: '2024-06-11',
+    title: 'My Journey with NeelBuilds',
+    subtitle: 'From Code to Custom Domains and Advanced Storage',
+    image: '/images/projects/websiteprojectcover.jpg',
+    link: 'https://blog.neelbuilds.com/personal-website',
+    startDate: '2024-06-30',
+    endDate: '2024-08-31',
     desc:
-      'This blog series covers essential topics for the'
-      + 'AWS Cloud Practitioner certification,'
-      + ' including AWS services, cloud basics,'
-      + 'security, and pricing. It is ideal for beginners aiming'
-      + 'to understand AWS and pass the certification exam.',
+      'I have deployed NeelBuilds using Netlify, Cloudflare, and AWS S3'
+      + ' Learning ReactJS and enhancing my HTML/CSS skills,'
+      + ' significantly improved the process, highlighting'
+      + 'the benefits of a streamlined workflow and CI/CD practices.',
   },
 ];
 
