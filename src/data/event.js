@@ -56,6 +56,15 @@ const data = [
     ],
     date: '2024-07-25',
   },
+  {
+    title: 'AWS Summit',
+    images: [
+      'https://photosevent.s3.amazonaws.com/aws+lecture+bedrock.jpg',
+      'https://photosevent.s3.amazonaws.com/e.png',
+      'https://photosevent.s3.amazonaws.com/aws+event+hall.jpg',
+    ],
+    date: '2024-09-11',
+  },
 ];
 
 export default data;
