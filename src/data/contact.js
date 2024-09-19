@@ -29,3 +29,8 @@ const data = [
 ];
 
 export default data;
+
+export const contactInfo = {
+    // ... existing contact info ...
+    bookingLink: "https://calendar.app.google/szHqRbEJnjsEk5kH6",
+};
