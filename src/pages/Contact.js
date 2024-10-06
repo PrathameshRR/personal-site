@@ -21,7 +21,7 @@ const Contact = () => (
         <EmailLink />
       </div>
       <ContactIcons />
-      <a href="https://calendar.app.google/szHqRbEJnjsEk5kH6" target="_blank" rel="noopener noreferrer">Book a Meeting</a>
+      {/* <a href="https://calendar.app.google/szHqRbEJnjsEk5kH6" target="_blank" rel="noopener noreferrer">Book a Meeting</a> */}
     </article>
   </Main>
 );
