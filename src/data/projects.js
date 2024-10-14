@@ -1,6 +1,19 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'From Code to Cloud: Building a Full-Stack App with React & Python',
+    subtitle: 'Deploying My Full-Stack App: A Journey with React & Python',
+    image: '/images/projects/Deploymentofreactjsapp.png',
+    link: 'https://blog.neelbuilds.com/math-solver',
+    startDate: '2024-09-28',
+    endDate: '2024-10-13',
+    desc:
+      'I built and deployed a full-stack app using React (frontend) '
+      + 'and Python (backend), hosted on Netlify and Render.'
+      + 'This journey enhanced my skills in seamless'
+      + 'integration and efficient deployment.',
+  },
+  {
     title: 'Deployment Of ReactJS by Using Docker and EC2',
     subtitle: 'Deployement by using Docker and EC2',
     image: '/images/projects/Deploymentofreactjsapp.png',
