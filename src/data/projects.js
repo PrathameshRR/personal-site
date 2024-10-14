@@ -3,7 +3,7 @@ const data = [
   {
     title: 'From Code to Cloud: Building a Full-Stack App with React & Python',
     subtitle: 'Deploying My Full-Stack App: A Journey with React & Python',
-    image: '/images/projects/Deploymentofreactjsapp.png',
+    image: '/images/projects/Mathsolver.png',
     link: 'https://blog.neelbuilds.com/math-solver',
     startDate: '2024-09-28',
     endDate: '2024-10-13',
