@@ -30,8 +30,14 @@ const skills = [
   {
     title: 'Python',
     competency: 5,
-    category: ['Languages', 'Python'],
+    category: ['Languages', 'Web development','Machine Learning'],
   },
+  {
+    title: 'React JS',
+    competency: 3,
+    category: ['Web Deployement', 'Languages'],
+  },
+  
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
 // this is a list of colors that I like. The length should be == to the
