@@ -30,7 +30,7 @@ const skills = [
   {
     title: 'Python',
     competency: 5,
-    category: ['Languages', 'Web Development', 'Machine Learning'],
+    category: ['Web Development', 'Languages', 'Machine Learning'],
   },
   {
     title: 'React JS',
