@@ -15,7 +15,7 @@ const skills = [
   {
     title: 'Amazon Web Services',
     competency: 2,
-    category: ['Web Deployement', 'Tools'],
+    category: ['Deployment', 'Tools'],
   },
   {
     title: 'SQL',
@@ -35,7 +35,7 @@ const skills = [
   {
     title: 'React JS',
     competency: 3,
-    category: ['Web Deployement', 'Languages'],
+    category: ['Web Development', 'Languages'],
   },
 
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
