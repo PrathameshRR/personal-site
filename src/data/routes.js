@@ -15,10 +15,10 @@ const routes = [
   {
     label: 'Projects',
     path: '/projects',
-  },  
+  }, 
   {
     label: 'Customers',
-    path: '/customers'
+    path: '/customers',
   },
   {
     label: 'Stats',
