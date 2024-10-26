@@ -4,7 +4,7 @@ const data = [
     subtitle: 'Building a website',
     image: '/images/Customer-1.png',
     link: 'https://prestar.ca',
-    startDate: '2024-01-15',
+    startDate: '2024-10-01',
     endDate: 'Present',
     desc:
       'Developing marketing webiste using squarespace',
