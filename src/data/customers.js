@@ -7,7 +7,7 @@ const data = [
     startDate: '2024-10-01',
     endDate: 'Present',
     desc:
-      'Developing marketing webiste using squarespace',
+      'Developing marketing website using squarespace',
   }, // You can add more customer entries here following the same format
 ];
 export default data;
