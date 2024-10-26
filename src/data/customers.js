@@ -8,6 +8,6 @@ const data = [
     endDate: 'Present',
     desc:
       'Developing marketing webiste using squarespace',
-  },// You can add more customer entries here following the same format
+  }, // You can add more customer entries here following the same format
 ];
 export default data;
