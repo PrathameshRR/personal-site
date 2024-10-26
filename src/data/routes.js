@@ -18,7 +18,7 @@ const routes = [
   },  
   {
     label: 'Customers',
-    path: '/customers',
+    path: '/customers'
   },
   {
     label: 'Stats',
