@@ -45,15 +45,15 @@ Your web browser should automatically open to `<ip>:<port>:<path>` default: [htt
 2. Modify `homepage` in `package.json` to point to where you plan to host your site. If you do not plan on using a custom domain name, it should look like `https://[your-gh-username].github.io/[repository-name - default:personal-site]/`
 3. Make a commit to `main` and push your changes. That's it.
 4.  I hosted this webiste on netlify by connecting github repo to netlify your Build and deployement setting should be look like following
-Runtime: Default (Node.js environment)
-Base Directory: / (Make sure your package.json and project files are at the root of the repository.)
-Package Directory: Not set (Leave this blank because this React app is in the root directory.)
-Build Command: npm run build (This will generate the production build for the React application.)
-Publish Directory: build (React's build output is stored in the build folder, which will be published by Netlify.)
-Functions Directory: netlify/functions (optional) (Specify this if using serverless functions. Otherwise, it can be left empty.)
-Deploy Log Visibility: Public (Keep logs public for troubleshooting. Consider making it private if sensitive information is exposed.
-Builds Status: Active (netlify will build site when you commit changes in github.)
-5. If you plan on using a custom domain, modify `public/CNAME`. If you don't, delete `public/CNAME`.
+  - Runtime: Default (Node.js environment)
+  - Base Directory: / (Make sure your package.json and project files are at the root of the repository.)
+  - Package Directory: Not set (Leave this blank because this React app is in the root directory.)
+  - Build Command: npm run build (This will generate the production build for the React application.)
+  - Publish Directory: build (React's build output is stored in the build folder, which will be published by Netlify.)
+  - Functions Directory: netlify/functions (optional) (Specify this if using serverless functions. Otherwise, it can be left empty.)
+  - Deploy Log Visibility: Public (Keep logs public for troubleshooting. Consider making it private if sensitive information is exposed.
+  - Builds Status: Active (netlify will build site when you commit changes in github.)
+6. If you plan on using a custom domain, modify `public/CNAME`. If you don't, delete `public/CNAME`.
 
 ### Static Export
 
