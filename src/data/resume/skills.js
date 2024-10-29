@@ -1,47 +1,35 @@
-// TODO: Add Athletic Skills, Office Skills,
-// Data Engineering, Data Science, ML Engineering, ... ?
-
 const skills = [
   {
     title: 'C',
-    competency: 3,
     category: ['Languages'],
   },
   {
     title: 'DSA',
-    competency: 4,
     category: ['Data Engineering'],
   },
   {
     title: 'Amazon Web Services',
-    competency: 2,
     category: ['Deployment', 'Tools'],
   },
   {
     title: 'SQL',
-    competency: 4,
     category: ['Web Development', 'Databases', 'Languages'],
   },
   {
     title: 'HTML + CSS',
-    competency: 2,
     category: ['Web Development', 'Languages'],
   },
   {
     title: 'Python',
-    competency: 5,
     category: ['Web Development', 'Languages', 'Machine Learning'],
   },
   {
     title: 'React JS',
-    competency: 3,
     category: ['Web Development', 'Languages'],
   },
-
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
-// this is a list of colors that I like. The length should be == to the
-// number of categories. Re-arrange this list until you find a pattern you like.
+// Color scheme for categories
 const colors = [
   '#6968b3',
   '#37b1f5',
