@@ -1,7 +1,7 @@
 
 # Intro
 
-With a solid foundation in technology, I am currently pursuing an Advanced Diploma in Computer Engineering at [Sheridan College](https://www.sheridancollege.ca/). My professional journey in tech began at [Future Way-Institute of Multimedia](https://www.futurewayinstitute.com/), where I served as a Software Technician for about 2 years. This role allowed me to develop a strong background in software troubleshooting and technical support. As I advance my education, my goal is to become a Cloud/DevOps Engineer within the next three years, combining my practical experience with academic knowledge to excel in the field.
+I'm passionate about DevOps and web development, bringing both interests together through hands-on projects that deepen my technical expertise. Currently an Advanced Diploma student in Computer Engineering at [Sheridan Collge](https://www.sheridancollege.ca/), I've worked on projects that involve building full-stack applications, deploying on cloud platforms, and implementing CI/CD pipelines. These experiences have fueled my enthusiasm for bridging development and operations to create efficient, scalable solutions.
 
 # Currently
 
