@@ -1,16 +1,16 @@
 # Personal Website
 
-See: [mldangelo.com](https://mldangelo.com).
+See: [neelbuilds.com](https://neelbuilds.com).
 
-My personal website. An [MIT](https://github.com/mldangelo/personal-site/blob/main/LICENSE) licensed, simple, easily modifiable, statically-exportable [React](https://reactjs.org/), [Jamstack](https://jamstack.org/) application that deploys automatically for free using [github pages](https://pages.github.com/). Built using modern javascript, based on [create-react-app](https://github.com/facebook/create-react-app) with [React-Router](https://reactrouter.com/), SCSS, [github actions](https://github.com/features/actions), and many other useful technologies.
+This website is originaly of [mldangelo](https://mldangelo.com) personal site, I fork from the PrathmeshRR.Mldangelo  has an [MIT](https://github.com/mldangelo/personal-site/blob/main/LICENSE) licensed, simple, easily modifiable, statically-exportable [React](https://reactjs.org/), [Jamstack](https://jamstack.org/) application that deploys automatically for free using [github pages](https://pages.github.com/). Built using modern javascript, based on [create-react-app](https://github.com/facebook/create-react-app) with [React-Router](https://reactrouter.com/), SCSS, [github actions](https://github.com/features/actions), and many other useful technologies.
 
 ## Adapting this Project
 
-Building your own personal website from this project can take as little as 30 minutes. Follow the setup instructions below and review **detailed notes and a checklist on adapting this project [here](./docs/adapting-guide.md)**. Please feel free to reach out to me by filing an issue or emailing me at [help@mldangelo.com](mailto:help@mldangelo.com) for help configuring your project.
+If you are familiar with React, building your own website using this template can be quick. You can follow the set of instruction in my blog post on [adapting this template](https://blog.neelbuilds.com/personal-website) You follow the setup instructions below and review made by Mddangelo **detailed notes and a checklist on adapting this project [here](./docs/adapting-guide.md)**. Please feel free to reach out to me by filing an issue or emailing me at [neel_patel2004@outlook.com](mailto:neel_patel2004@outlook.com) for help configuring your project.
 
 ## Contributing
 
-Contributions are actively encouraged. Please review the [design goals](./docs/design-goals.md), [roadmap](./docs/roadmap.md), and [contributing guidelines](./docs/contributing.md). If you find a bug, please email me, submit a pull request (I'll buy you a coffee as a thank you), or submit an issue.
+If you find a bug, please email me, submit a pull request (I'll buy you a coffee as a thank you), or submit an issue.
 
 ## Dependencies
 
@@ -39,13 +39,21 @@ Your web browser should automatically open to `<ip>:<port>:<path>` default: [htt
 
 ## Deploying
 
-### Deploying to Github Pages
+### Deploying to Github Pages & Netlify
 
 1. Modify the environmental variables and git remote url in [`.github/workflows/github-pages.yml`](.github/workflows/github-pages.yml).
 2. Modify `homepage` in `package.json` to point to where you plan to host your site. If you do not plan on using a custom domain name, it should look like `https://[your-gh-username].github.io/[repository-name - default:personal-site]/`
-3. If you plan on using a custom domain, modify `public/CNAME`. If you don't, delete `public/CNAME`.
-
-Make a commit to `main` and push your changes. That's it.
+3. Make a commit to `main` and push your changes. That's it.
+4.  I hosted this webiste on netlify by connecting github repo to netlify your Build and deployement setting should be look like following
+  - Runtime: Default (Node.js environment)
+  - Base Directory: / (Make sure your package.json and project files are at the root of the repository.)
+  - Package Directory: Not set (Leave this blank because this React app is in the root directory.)
+  - Build Command: npm run build (This will generate the production build for the React application.)
+  - Publish Directory: build (React's build output is stored in the build folder, which will be published by Netlify.)
+  - Functions Directory: netlify/functions (optional) (Specify this if using serverless functions. Otherwise, it can be left empty.)
+  - Deploy Log Visibility: Public (Keep logs public for troubleshooting. Consider making it private if sensitive information is exposed.
+  - Builds Status: Active (netlify will build site when you commit changes in github.)
+6. If you plan on using a custom domain, modify `public/CNAME`. If you don't, delete `public/CNAME`.
 
 ### Static Export
 
