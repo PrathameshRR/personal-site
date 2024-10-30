@@ -14,7 +14,8 @@
     "start": "react-scripts start",
     "lint": "eslint src",
     "test": "react-scripts test --watchAll=false",
-    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js"
+    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
+    "postbuild": "cp ./_redirects ./build/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
