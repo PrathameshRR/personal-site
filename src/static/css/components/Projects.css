@@ -1,8 +1,10 @@
 .project-categories {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1rem;
   margin-bottom: 2rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
 }
 
 .category-btn {
@@ -32,4 +34,23 @@
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
+}
+
+/* Add smooth scrolling for the navigation */
+.project-categories::-webkit-scrollbar {
+  height: 6px;
+}
+
+.project-categories::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.project-categories::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.project-categories::-webkit-scrollbar-thumb:hover {
+  background: #555;
 } 

@@ -8,9 +8,9 @@ import '../static/css/components/Projects.css';
 
 const Categories = {
   ALL: 'All',
-  CLOUD: 'Cloud & DevOps Projects',
-  FULLSTACK: 'Full-Stack & Web Development',
-  ML: 'Machine Learning & Computer Vision',
+  CLOUD: 'Cloud & DevOps',
+  FULLSTACK: 'Full-Stack',
+  ML: 'Machine Learning',
 };
 
 const Projects = () => {
