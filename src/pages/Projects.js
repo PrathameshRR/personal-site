@@ -17,8 +17,8 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState(Categories.ALL);
 
   const filteredProjects = data.filter((project) => 
-    activeCategory === Categories.ALL || 
-    project.categories.includes(activeCategory)
+    activeCategory === Categories.ALL
+    || project.categories.includes(activeCategory),
   );
 
   return (
@@ -33,10 +33,10 @@ const Projects = () => {
             <p>A selection of projects that I&apos;m not too ashamed of</p>
           </div>
         </header>
-        
         <div className="project-categories">
           {Object.values(Categories).map((category) => (
             <button
+              type="button"
               key={category}
               className={`category-btn ${activeCategory === category ? 'active' : ''}`}
               onClick={() => setActiveCategory(category)}
@@ -45,7 +45,6 @@ const Projects = () => {
             </button>
           ))}
         </div>
-
         {filteredProjects.map((project) => (
           <Cell
             data={project}
