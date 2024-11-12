@@ -16,10 +16,8 @@ const Categories = {
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState(Categories.ALL);
 
-  const filteredProjects = data.filter((project) => 
-    activeCategory === Categories.ALL
-    || project.categories.includes(activeCategory),
-  );
+  const filteredProjects = data.filter((project) => activeCategory === Categories.ALL
+    || project.categories.includes(activeCategory),);
 
   return (
     <Main
