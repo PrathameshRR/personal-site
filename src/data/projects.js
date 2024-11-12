@@ -12,7 +12,7 @@ const data = [
       + 'and Python (backend), hosted on Netlify and Render.'
       + 'This journey enhanced my skills in seamless'
       + 'integration and efficient deployment.',
-    categories: ['Full-Stack', 'Cloud & DevOps'],
+    categories: ['Full-Stack'],
   },
   {
     title: 'Deployment Of ReactJS by Using Docker and EC2',
@@ -40,7 +40,7 @@ const data = [
       + ' Learning ReactJS and enhancing my HTML/CSS skills,'
       + ' significantly improved the process, highlighting'
       + 'the benefits of a streamlined workflow and CI/CD practices.',
-    categories: ['Full-Stack', 'Cloud & DevOps'],
+    categories: ['Full-Stack'],
   },
   {
     title: 'AWS Cloud Paractitioner Series',
