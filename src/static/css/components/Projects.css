@@ -20,9 +20,7 @@
 }
 
 .category-btn.active {
-  background: #333;
-  color: white;
-  border-color: #333;
+    background: #f0f0f0;
 }
 
 @media (max-width: 768px) {
