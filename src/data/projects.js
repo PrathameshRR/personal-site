@@ -12,6 +12,7 @@ const data = [
       + 'and Python (backend), hosted on Netlify and Render.'
       + 'This journey enhanced my skills in seamless'
       + 'integration and efficient deployment.',
+    categories: ['Full-Stack & Web Development', 'Cloud & DevOps Projects'],
   },
   {
     title: 'Deployment Of ReactJS by Using Docker and EC2',
@@ -25,6 +26,7 @@ const data = [
       + 'It covers preparation, hosting, configuration, and focuses  '
       + 'on performance optimization to '
       + 'ensure a seamless deployment process.',
+    categories: ['Cloud & DevOps Projects'],
   },
   {
     title: 'My Journey with NeelBuilds',
@@ -38,6 +40,7 @@ const data = [
       + ' Learning ReactJS and enhancing my HTML/CSS skills,'
       + ' significantly improved the process, highlighting'
       + 'the benefits of a streamlined workflow and CI/CD practices.',
+    categories: ['Full-Stack & Web Development', 'Cloud & DevOps Projects'],
   },
   {
     title: 'AWS Cloud Paractitioner Series',
@@ -52,6 +55,7 @@ const data = [
       + ' including AWS services, cloud basics,'
       + 'security, and pricing. It is ideal for beginners aiming'
       + 'to understand AWS and pass the certification exam.',
+    categories: ['Cloud & DevOps Projects'],
   },
 ];
 

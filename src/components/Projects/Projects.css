@@ -1,0 +1,37 @@
+.project-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.category-btn:hover {
+  background: #f0f0f0;
+}
+
+.category-btn.active {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+@media (max-width: 768px) {
+  .project-categories {
+    gap: 0.5rem;
+  }
+  
+  .category-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+} 
