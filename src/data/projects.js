@@ -1,6 +1,30 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'Urban Global: Solution for Sustainable Brampton Transit',
+    subtitle: 'Empowering Sustainable Commuting in Brampton Through Multi-Modal Transit Options',
+    image: '/images/projects/UrbanGlobal.png',
+    link: 'https://blog.neelbuilds.com/urban-flow-solution-for-sustainable-brampton-transit',
+    startDate: '2024-11-09',
+    endDate: '2024-11-10',
+    desc:
+    'Urban Global is a multi-modal trip planner created in a hackathon to promote sustainable commuting in Brampton. '
+    + 'It provides an easy-to-use platform for exploring eco-friendly travel options, supporting Brampton Transit\'s goals.',
+    categories: ['Full-Stack'],
+  },
+  {
+    title: 'Bus Crowd Detection System',
+    subtitle: 'Building a Real-Time Bus Crowd Detection System with YOLOv4-Tiny',
+    image: '/images/projects/CrowdDetection.jpg',
+    link: 'https://blog.neelbuilds.com/bus-crowd-detection-system',
+    startDate: '2024-11-09',
+    endDate: '2024-11-10',
+    desc:
+      'A real-time Bus Crowd Detection System using YOLOv4-tiny for person detection and email alerts for crowd monitoring. '
+      + 'The system tracks bus occupancy levels, stores data for analysis, and ensures proactive management to improve passenger safety.',
+    categories: ['Machine Learning'],
+  },
+  {
     title: 'From Code to Cloud: Building a Full-Stack App with React & Python',
     subtitle: 'Deploying My Full-Stack App: A Journey with React & Python',
     image: '/images/projects/Mathsolver.png',
@@ -12,6 +36,7 @@ const data = [
       + 'and Python (backend), hosted on Netlify and Render.'
       + 'This journey enhanced my skills in seamless'
       + 'integration and efficient deployment.',
+    categories: ['Full-Stack'],
   },
   {
     title: 'Deployment Of ReactJS by Using Docker and EC2',
@@ -25,6 +50,7 @@ const data = [
       + 'It covers preparation, hosting, configuration, and focuses  '
       + 'on performance optimization to '
       + 'ensure a seamless deployment process.',
+    categories: ['Cloud & DevOps'],
   },
   {
     title: 'My Journey with NeelBuilds',
@@ -38,6 +64,7 @@ const data = [
       + ' Learning ReactJS and enhancing my HTML/CSS skills,'
       + ' significantly improved the process, highlighting'
       + 'the benefits of a streamlined workflow and CI/CD practices.',
+    categories: ['Full-Stack'],
   },
   {
     title: 'AWS Cloud Paractitioner Series',
@@ -52,6 +79,7 @@ const data = [
       + ' including AWS services, cloud basics,'
       + 'security, and pricing. It is ideal for beginners aiming'
       + 'to understand AWS and pass the certification exam.',
+    categories: ['Cloud & DevOps'],
   },
 ];
 
