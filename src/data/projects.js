@@ -15,7 +15,7 @@ const data = [
   {
     title: 'Bus Crowd Detection System',
     subtitle: 'Building a Real-Time Bus Crowd Detection System with YOLOv4-Tiny',
-    image: '/images/projects/UrbanGlobal.png',
+    image: '/images/projects/CrowdDetection.jpg',
     link: 'https://blog.neelbuilds.com/bus-crowd-detection-system',
     startDate: '2024-11-09',
     endDate: '2024-11-10',
