@@ -1,0 +1,29 @@
+// Hacker page (/hacker)
+
+#hacker {
+  .title {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+
+    th, td {
+      padding: 0.5em;
+      border: 1px solid _palette(border);
+      text-align: left;
+    }
+
+    th {
+      background-color: _palette(bg-alt);
+      font-weight: _font(weight-bold);
+    }
+
+    tr:nth-child(even) {
+      background-color: _palette(bg-alt);
+    }
+  }
+}
