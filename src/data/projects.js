@@ -3,8 +3,8 @@ const data = [
   {
     title: 'Urban Global: Solution for Sustainable Brampton Transit',
     subtitle: 'Empowering Sustainable Commuting in Brampton Through Multi-Modal Transit Options',
-    image: '/images/projects/UrbanGlobal.png',  
-    link: 'https://blog.neelbuilds.com/urban-flow-solution-for-sustainable-brampton-transit',  
+    image: '/images/projects/UrbanGlobal.png',
+    link: 'https://blog.neelbuilds.com/urban-flow-solution-for-sustainable-brampton-transit',
     startDate: '2024-11-09',
     endDate: '2024-11-10',
     desc:
@@ -15,8 +15,8 @@ const data = [
   {
     title: 'Bus Crowd Detection System',
     subtitle: 'Building a Real-Time Bus Crowd Detection System with YOLOv4-Tiny',
-    image: '/images/projects/UrbanGlobal.png',  
-    link: 'https://blog.neelbuilds.com/bus-crowd-detection-system',  
+    image: '/images/projects/UrbanGlobal.png', 
+    link: 'https://blog.neelbuilds.com/bus-crowd-detection-system',
     startDate: '2024-11-09',
     endDate: '2024-11-10',
     desc:
