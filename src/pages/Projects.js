@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 import Cell from '../components/Projects/Cell';
 import data from '../data/projects';
-import '../static/css/components/Projects.css';
+import '../static/css/components/_projects.scss';
 
 const Categories = {
   ALL: 'All',
