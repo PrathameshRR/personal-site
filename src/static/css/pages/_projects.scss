@@ -1,0 +1,75 @@
+// Variables (should be in a separate _variables.scss file)
+:root {
+  --spacing-xs: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --border-radius-lg: 20px;
+  --font-size-sm: 0.9rem;
+  --border-color: #ccc;
+  --bg-hover: #f0f0f0;
+  --scrollbar-bg: #f1f1f1;
+  --scrollbar-thumb: #888;
+  --scrollbar-thumb-hover: #555;
+}
+
+.project-categories {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-xs);
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.category-btn {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+  
+  &:hover,
+  &:focus,
+  &.active {
+    background: var(--bg-hover);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-categories {
+    gap: calc(var(--spacing-xs));
+  }
+  
+  .category-btn {
+    padding: calc(var(--spacing-xs) - 0.1rem) calc(var(--spacing-md) - 0.2rem);
+    font-size: calc(var(--font-size-sm) - 0.1rem);
+  }
+}
+
+// Scrollbar styling
+.project-categories {
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+    
+    &:hover {
+      background: var(--scrollbar-thumb-hover);
+    }
+  }
+} 
