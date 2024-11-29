@@ -30,7 +30,7 @@ const data = [
     image: '/images/projects/Mathsolver.png',
     link: 'https://blog.neelbuilds.com/math-solver',
     startDate: '2024-09-28',
-    endDate: '2024-10-13',
+    endDate: 'Present',
     desc:
       'I built and deployed a full-stack app using React (frontend) '
       + 'and Python (backend), hosted on Netlify and Render.'
