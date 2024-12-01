@@ -7,8 +7,8 @@ const data = [
     startDate: '2024-10-01',
     endDate: 'Present',
     desc:
-      'Built a product launch website using Squarespace, creating a strong'+
-      'online presence to boost brand recognition by 30% using squarespace',
-  }, 
+      'Built a product launch website using Squarespace, creating a strong'
+      + 'online presence to boost brand recognition by 30% using squarespace',
+  },
 ];
 export default data;
