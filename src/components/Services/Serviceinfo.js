@@ -12,8 +12,8 @@ const Serviceinfo = ({ data }) => (
       </header>
       <div className="additional-info">
         <ul>
-          {data.additionalInfo.map((info, index) => (
-            <li key={`${data.title}-${index}`}>{info}</li>
+          {data.additionalInfo.map((info) => (
+            <li key={`${data.title}-${info}`}>{info}</li>
           ))}
         </ul>
       </div>
