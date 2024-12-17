@@ -41,7 +41,6 @@ const Projects = () => {
             </button>
           ))}
         </div>
-        
         {filteredProjects.map((project) => (
           <Serviceinfo
             data={project}
