@@ -13,7 +13,7 @@ const Serviceinfo = ({ data }) => (
       <div className="additional-info">
         <ul>
           {data.additionalInfo.map((info, index) => (
-            <li key={index}>{info}</li>
+            <li key={`${data.title}-${index}`}>{info}</li>
           ))}
         </ul>
       </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 import Serviceinfo from '../components/Services/Serviceinfo';
-import data from '../data/services'
+import data from '../data/services';
 import '../static/css/components/_services.scss';
 
 const Categories = {
