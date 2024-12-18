@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'Neel Patel',
     path: '/',
   },
   {
@@ -17,12 +17,29 @@ const routes = [
     path: '/projects',
   },
   {
+    label: 'Services',
+    path: '/services',
+  },
+  {
+    label: 'Customers',
+    path: '/customers',
+  },
+  {
     label: 'Stats',
     path: '/stats',
   },
   {
+    label: 'Events',
+    path: '/Event',
+  },
+  {
     label: 'Contact',
     path: '/contact',
+  },
+  {
+    label: 'Blog',
+    path: 'https://blog.neelbuilds.com',
+    external: true,
   },
 ];
 
