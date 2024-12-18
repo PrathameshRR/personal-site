@@ -46,7 +46,7 @@ const data = [
     additionalInfo: [
       'Styled with Tailwind CSS for efficient design.',
       'Built the backend with FastAPI for better performance.',
-      'Added graph functionality for data insights.',
+      'Added graph functionality for visualizing fuctions.',
       'Developed React frontend, hosted on Netlify.',
       'Hosted backend on Render with GitHub integration.',
     ],
